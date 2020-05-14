@@ -1245,6 +1245,43 @@ p {
   margin-left: 7vw;
   margin-right: 5vw;
 }
+.leader-board-section > div {
+  display: flex;
+  flex-direction: column;
+}
+.leader-board-section > div > * {
+  flex: 1 1 auto;
+}
+.leader-board-section button.btn-primary {
+  background-color: white;
+  border: 2px black solid;
+  padding: unset;
+  box-shadow: 5px 5px 0 #000000;
+}
+.leader-board-section .cardClass {
+  margin: unset;
+}
+.leader-board-section .cardClass > * {
+  flex: 1 1 auto;
+  margin: unset;
+  width: unset;
+}
+.leader-board-section .cardClass .points {
+  margin: unset;
+  width: unset;
+}
+.leader-board-section .cardClass .name {
+  flex: 1 1 auto;
+}
+.leader-board-section .cardClass .points {
+  flex: 1 1 auto;
+}
+.leader-board-section .cardClass i {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .leader-board-section .teamCardFlex {
   color: black;
   display: flex;
@@ -1276,17 +1313,23 @@ p {
 .cardClass {
   background-color: black;
 }
-.card-body {
+div.card-body {
   font-family: "gopher", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  padding: 0 0 1.25rem;
 }
-.card-body .accordian-user-card {
+div.card-body .accordian-user-card {
   border: black 2px solid;
   margin-top: 10px;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
   font-size: 24px;
+}
+div.card-body .accordian-user-card h3,
+div.card-body .accordian-user-card div {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin: unset;
 }
